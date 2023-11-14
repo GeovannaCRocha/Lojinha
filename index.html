@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tênis Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+        <div class="logo">
+            <h1 class="logo-nome">Tênis Bar<span>.</span></h1>
+        </div>
+        <div id="buscar">
+            <input type="text" id="buscar-input"
+            placeholder="Pesquisar produto"
+            oninput="buscarProduto()">
+            <button onclick="buscarSite()">Buscar</button>
+        </div>
+        <div id="carrinho-icon"
+        onclick="toggleCarrinho()">
+        <div class="imagem">
+            <img src="img/carrinho.png" alt="">
+        </div>
+        <div id="carrinho-itens">
+            <ul id="itens-lista"></ul>
+            <span id="preco-total">Valor Total: R$0,00</span>
+            <button onclick="limparcarrinho()">Limpar Carrinho</button>
+        </div>
+        </div> 
+    </div>
+    </header>
+
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                    <div class="imagem">
+                        <img src="img/tênis1.jpg" alt="">
+                    </div>
+                    <div class="infos">
+                        <h3>Tênis 1</h3>
+                        <p>R$ 150,00</p>
+                        <button onclick="addCarrinho('Tênis 1', 150.00)"> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="imagem">
+                        <img src="img/tenis2.jpg" alt="">
+                    </div>
+                    <div class="infos">
+                        <h3>Tênis 2</h3>
+                        <p>R$ 110,00</p>
+                        <button onclick="addCarrinho('Tênis 2', 110.00)"> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="imagem">
+                        <img src="img/tênis3.jpg" alt="">
+                    </div>
+                    <div class="infos">
+                        <h3>Tênis 3</h3>
+                        <p>R$ 180,00</p>
+                        <button onclick="addCarrinho('Tênis 3', 180.00)"> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                    <div class="imagem">
+                        <img src="img/tenis4.jpg" alt="">
+                    </div>
+                    <div class="infos">
+                        <h3>Tênis 4</h3>
+                        <p>R$ 150,00</p>
+                        <button onclick="addCarrinho('Tênis 4', 150.00)"> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="imagem">
+                        <img src="img/tênis5.png" alt="">
+                    </div>
+                    <div class="infos">
+                        <h3>Tênis 5</h3>
+                        <p>R$ 165,00</p>
+                        <button onclick="addCarrinho('Tênis 5', 165.00)"> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <div class="produto">
+                    <div class="imagem">
+                        <img src="img/tênis6.jpg" alt="">
+                    </div>
+                    <div class="infos">
+                        <h3>Tênis 6</h3>
+                        <p>R$ 199,00</p>
+                        <button onclick="addCarrinho('Tênis 6', 199.00)"> Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
